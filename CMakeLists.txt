@@ -7,6 +7,10 @@ include_directories(${EIGEN3_INCLUDE_DIR})
 
 add_executable(main 
                main.cc
-	       )
+	          )
 target_link_libraries(main ${ALPSCore_LIBRARIES})
 
+add_executable(joe
+               joe.cc
+	          )
+target_link_libraries(joe ${ALPSCore_LIBRARIES})
